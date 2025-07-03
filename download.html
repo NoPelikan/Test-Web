@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download HTML Beispiel</title>
+</head>
+<body onload="downloadVideo()">
+    <h1>Dies ist eine heruntergeladene HTML-Datei</h1>
+    <p>Du hast erfolgreich die Datei download.html heruntergeladen!</p>
+    <script>
+    function downloadVideo() {
+        var a = document.createElement('a');
+        a.href = 'video.mp4'; // Der Name der Videodatei im gleichen Ordner
+        a.download = 'video.mp4';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+    </script>
+</body>
+</html>
