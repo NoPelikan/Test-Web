@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrierung</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Candara, sans-serif;
+            background: #f0f4f8;
+        }
+        .register-box {
+            background: #2196f3;
+            color: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            min-width: 300px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #fff;
+            color: #2196f3;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #e3e3e3;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-box">
+        <h1>Registrieren</h1>
+        <form onsubmit="alert('Registrierung abgeschickt! (Nur Demo, keine Speicherung)'); window.location.href='index.html'; return false;">
+            <input type="text" name="username" placeholder="Name" required><br>
+            <input type="email" name="email" placeholder="E-Mail" required><br>
+            <input type="password" name="password" placeholder="Passwort" required><br>
+            <button type="submit">Registrieren</button>
+        </form>
+        <p>Schon einen Account? <a href="index.html" style="color:#fff;text-decoration:underline;">Hier anmelden</a></p>
+    </div>
+</body>
+</html>
